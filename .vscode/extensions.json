@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "orta.vscode-jest",
+    "streetsidesoftware.code-spell-checker",
+    "GraphQL.vscode-graphql",
+    "esbenp.prettier-vscode"
+  ]
+}
