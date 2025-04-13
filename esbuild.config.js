@@ -1,12 +1,15 @@
 const esbuild = require('esbuild');
+const { nodeExternalsPlugin } = require('esbuild-node-externals');
 
 const sharedConfig = {
   entryPoints: ['src/index.ts'],
   bundle: true,
   minify: true,
   sourcemap: true,
+  treeShaking: true,
   target: 'node20',
   platform: 'node',
+  plugins: [nodeExternalsPlugin()],
 };
 
 esbuild.build({
